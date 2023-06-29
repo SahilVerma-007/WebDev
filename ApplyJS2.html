@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 3px solid purple;
+    }
+    .clock
+    {
+        display: flex;
+        background-color: rgb(190, 181, 181);
+        border:2px solid black;
+        color: brown;
+         border-radius:5px ;
+        padding: 8px;
+         font-size: 25px;
+         justify-content: center;
+    }
+    #time
+    {
+        padding-left: 8px;
+        font-weight: bold;s
+    
+    }
+</style>
+
+<body>
+    <!-- Manipulating DOM -->
+    <div id="main" class="container">
+        <ul id="text">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Service</li>
+            <li>FAQ</li>
+        </ul>
+    </div>
+    <div class="container">
+        this is a container
+    </div>
+    <hr size="5" color="purple">
+    <!-- Browserevent:
+    click
+    contextmenu
+mouseover/mouseout
+mousedown/mouseup
+mousemove
+
+submit
+focuss
+DOMcontent loaded-->
+    <div class="container1">
+        <h1>This is a heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ab inventore odit quae, voluptatibus possimus amet sint molestias ipsam ea voluptate est maxime mollitia qui itaque corrupti blanditiis dolore recusandae in? Fugiat, nesciunt quos!
+            Laudantium necessitatibus maiores reiciendis quo, porro quae. Cum exercitationem qui accusantium quasi blanditiis quia nostrum error nobis aliquid enim sunt aut aspernatur dolore hic ut, ad magni et tempore repellendus quae doloremque harum
+            porro expedita natus? Repudiandae officia, ut magni sed provident cupiditate, quia numquam praesentium eum sunt animi odio quasi velit labore suscipit soluta? Perspiciatis vitae est voluptatum non at dolor repellendus modi incidunt quasi.Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Libero delectus doloribus dignissimos distinctio modi, corporis quibusdam velit consequatur eos iusto vel, provident tempore dolorem placeat, non eius veniam voluptatum a.</p>
+    </div>
+    <button id="btn" onclick="ToggleHide()">Show/Hide</button>
+    <hr size="5" color="purple">
+    <div class="clock">
+         The Current Date and time is <span id="time"></span>
+    </div>
+
+</body>
+<script src="JavaScript/JavaScript2.js"></script>
+
+</html>

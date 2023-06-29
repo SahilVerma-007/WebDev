@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a paragaph</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae illum ipsam nemo! Maxime est hic ab soluta voluptas nostrum consequuntur, porro alias nihil voluptatem atque praesentium mollitia assumenda quia eius eaque cumque voluptatum rem
+            neque aperiam. Quaerat dolores atque sit ipsam provident sequi minus eveniet vel! Porro, sequi vero! Ipsum alias mollitia blanditiis error dolore perferendis nulla ab possimus reiciendis.</p>
+    </div>
+    <script>
+        console.log('Hello World');
+    </script>
+    <script>
+        {
+            let a = 5; /*unary operator-1 operand and binary operator-2 operands*/
+            let b = 6;
+            c = a + b;
+            console.log("a=" + a);
+            console.log("b=" + b);
+            console.log("The value of a+b is " + (a + b));
+            console.log("The value of a**b is " + (a ** b)); /*to the power*/
+        }
+    </script>
+    <script>
+        var string = "Hey Buddy.";
+        var message = "Wassupp!!";
+        var hobby = "cricket";
+        var name = "Sahil";
+        var sentence = `${name} loves to play ${hobby}`;
+        var len = name.length;
+        console.log(string + message);
+        console.log(sentence);
+        console.log("Length of name is " + len);
+        console.log("Hello\nfriends")
+        var y = new String("this");
+        console.log(y);
+        document.getElementById('content').innerHTML = '<h3>I Entered through Java Script</h3>';
+    </script>
+    <script>
+        /*String Properties*/
+        var string = "This is a String";
+        console.log(string);
+        var position = string.indexOf('is');
+        console.log(position);
+        var position1 = string.lastIndexOf('is');
+        console.log(position1);
+        var substr = string.slice(1, 8);
+        console.log(substr);
+        var substr1 = string.substr(1, 3); /*stsrting index,number of charaters to extract from that index*/
+        console.log(substr1);
+        var replaced = string.replace('String', 'Box');
+        console.log(replaced);
+        console.log(string.toUpperCase());
+        console.log(string.concat('.Very old string'));
+        var strWithWhiteSpace = "    This is a     Whitespace    "
+        console.log(strWithWhiteSpace);
+        console.log(strWithWhiteSpace.trim());
+        var char1 = string.charCodeAt(5);
+        console.log(char1);
+        console.log(string[10]);
+    </script>
+    <script>
+        /* scope and conditional*/
+        let a = "hey"; {
+            let a = "hello";
+            console.log(a);
+        }
+        console.log(a);
+        const z = "This cannot be chaged";
+        console.log(z);
+    </script>
+    <script>
+        /* arrays and objects*/
+        let employee = {
+            name: "Sahil",
+            Salary: "Thenga",
+            Channel: "Channel kholne ki aukat nahi"
+        }
+        console.log(employee);
+        // let name = new Array(41, 2, 4, "Apna", "Bana", "Le", "Piya");
+        let name = new Array(25);
+        console.log(name.length);
+        name = name.sort();
+        name.push("Dont push me");
+        console.log(name);
+    </script>
+</body>
+
+</html>
